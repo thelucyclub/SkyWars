@@ -37,7 +37,7 @@ class SkyWars extends PluginBase implements Listener {
 	public function onEnable()
 	{
         $this->getServer()->getPluginManager()->registerEvents($this ,$this);
-		$this->getLogger()->info(TextFormat::GREEN . "SurvivalGames Loaded!");
+		$this->getLogger()->info(TextFormat::GREEN . "SkyWars Loaded!");
 		$this->economy = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
 		@mkdir($this->getDataFolder());
 		$config = new Config($this->getDataFolder() . "/config.yml", Config::YAML);
